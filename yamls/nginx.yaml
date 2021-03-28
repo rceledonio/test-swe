@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: risshie/swe642:hw2
+      - image: risshie/swe642:2021-03-28-00-30-06
         name: nginx
