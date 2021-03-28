@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx
+    app: survey-server
+  name: survey-server
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: survey-server
   template:
     metadata:
       labels:
-        app: nginx
+        app: survey-server
     spec:
       containers:
       - image: risshie/swe642:2021-03-28-00-30-06
-        name: nginx
+        name: survey-server
